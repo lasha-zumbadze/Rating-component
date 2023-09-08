@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.container {
+  width: 35.7rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  display: grid;
+  gap: 2.3rem;
+  transition: all 1s;
+}
+
+.icon-circle {
+  width: 4rem;
+  height: 4rem;
+  background-color: hsl(213, 19%, 21%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 1.8rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.title h1 {
+  font-size: 2.2rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.title p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+
+.rating-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  background-color: hsl(213, 19%, 24%);
+  color: hsl(0, 0%, 100%);
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.rating:hover {
+  background-color: hsl(216, 12%, 65%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn-submit {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  padding: 1.2rem 0;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.active:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+
+/* ********************** */
+
+.thanks-container {
+  width: 35.7rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  padding: 4rem 3rem;
+  display: grid;
+  gap: 2.3rem;
+  transition: all 1s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  transform: rotateY(90deg);
+}
+
+.result-img {
+  width: 15rem;
+}
+
+.result {
+  background-color: hsl(213, 19%, 21%);
+  color: hsla(25, 97%, 53%, 0.737);
+  padding: 0.7rem 1rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+.title {
+  text-align: center;
+}
