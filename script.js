@@ -21,10 +21,7 @@ btnContainer.addEventListener("click", function (e) {
     btn.classList.add("active");
     activeBtn = true;
     ratingValue = btn.textContent;
-    result.insertAdjacentHTML(
-      "afterbegin",
-      `<p>You selected ${ratingValue} out of 5</p>`
-    );
+    
   }
 });
 
@@ -34,6 +31,10 @@ submit.addEventListener("click", function (e) {
   if (!activeBtn) return;
 
   mainContainer.style.transform = "rotateY(90deg)";
+  result.insertAdjacentHTML(
+      "afterbegin",
+      `<p>You selected ${ratingValue} out of 5</p>`
+    );
 
   setTimeout(() => {
     thanksContainer.style.transform = "rotateY(0deg)";
